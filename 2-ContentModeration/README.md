@@ -14,32 +14,47 @@ To enhance the solution, you will modify three components of the solution:
 
 ## Step 1 - Modify Media Analysis Lambda Function
 
-In this step, you will modify the Media Analysis Lambda Function to make calls to Rekognition DetectModerationLabels API and notify the admin if un-safe content is detected
+In this step, you will modify the Media Analysis Solution lambda function to extract text from images and then use detected labels, text and moderation labels to identify un-safe content.
 
-1. [Download](./code/lambda.zip) packaged lambda code on your local machine. This lambda function has been updated to include logic for content moderation.
+1. [Download](./code/lambda.zip) lambda package on your local machine. This lambda function has been updated to include logic for content moderation.
 
-2. Go to lambda console at https://console.aws.amazon.com/lambda/home.
+2. We have updated index.js and image.js as well as added content moderation module.
 
-3. In the add filter type media and you should see lambda functions that are part of Media Analysis Solution.
+![Lambda](assets/lambda-00.png)
 
-4. Click on the lambda function with description "AWS Lambda function to execute analysis".
+![Lambda](assets/lambda-01.png)
 
-  ```
-  Ensure that you are selecting the correct lambda function, as you do not want to write a different lambda function that is part of the solution.
-  ```
-5. Under Function Code, click on Upload and select the zip file you downloaded earlier.
+![Lambda](assets/lambda-02.png)
 
-6. Click Save to upload the new lambda code.
+![Lambda](assets/lambda-03.png)
 
-7. Under Environment Variables create two environment variables as below:
-  - Key: moderate_label_keywords
-  - Value: ocean, sun
-  - Key: moderate_text_keywords
-  - Value: sand, beach
+![Lambda](assets/lambda-04.png)
 
-8. Click on Save to save the environment variables.
+![Lambda](assets/lambda-05.png)
 
-  **You have successfully completed step 1!**
+![Lambda](assets/lambda-06.png)
+
+3. Go to the CloudFormation console https://console.aws.amazon.com/cloudformation/home
+
+4. Click on the stack with Stack Name - `Media Analysis`, select **Resources** tab from the bottom pane and navigate to Media Analysis Function. Click on the hyperlink to open the Media Analysis Function.
+
+  ![CloudFormation Stack Lambda](assets/lambda-cf-01.png)
+
+5. Under Function code, click on Upload button, select the zip file you downloaded in earlier step and click Save. It can take a minute to upload the zip file.
+
+![Lambda](assets/lambda-07.png)
+
+6. Under Environment variables, make following changes and click Save.
+  - Update value of CONFIDENCE_SCORE to 50
+  - Add two new environment variables:
+     - Key: moderate_label_keywords
+     - Value: ocean, sun
+     - Key: moderate_text_keywords
+     - Value: sand, beach
+
+![Lambda](assets/lambda-07.png)
+
+  **You have successfully completed step 1 and updated lambda function to perform additional analysis.!**
 
 ## Step 2 - Add permissions to IAM Role
 
