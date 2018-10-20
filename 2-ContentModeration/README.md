@@ -81,7 +81,7 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 
 ![Step Functions](assets/sf-01.png)
 
-3. Click Edit to update the state machine.
+3. On the state machine details screen, click Edit to update the state machine.
 
 ![Step Functions Edit](assets/sf-02.png)
 
