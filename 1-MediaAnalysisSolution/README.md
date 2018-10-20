@@ -106,7 +106,11 @@ After the CloudFormation template is complete, you should receive a welcome emai
 
 5. Click on **View Progress in your AWS Console** to go to StepFunction in AWS Console.
 
-6. Under Visual workflow, click on expand button to get maximized view of the workflow.
+6. Under Execution details, you can see the status of the state machine execution.
+
+![](assets/mas-sf-executing.png)
+
+7. Under Visual workflow, click on expand button to get maximized view of the workflow.
 
 ![](assets/mas-image-workflow.png)
 
