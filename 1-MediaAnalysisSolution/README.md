@@ -169,11 +169,11 @@ After the CloudFormation template is complete, you should receive a welcome emai
 
 ![](assets/mas-s3-content.png)
 
-13. Click on the S3 bucket that starts with media-analysis and go to private -> folder with guid in it -> media
+13. Click on the S3 bucket that starts with media-analysis and go to private -> folder with guid in it -> media. You will see folders with guid as their names for each object uploaded to MAS.
 
 ![](assets/mas-s3-objects.png)
 
-14. You will see folder with guid as their names for each object uploaded to MAS. Click on a folder and go inside nested folder results. You will see JSON files containing metadata for different Rekognition API  calls.
+14. Click on a folder and go inside nested folder results. You will see JSON files containing metadata returned by different Rekognition API  calls.
 
 ![](assets/mas-s3-objectresults.png)
 
