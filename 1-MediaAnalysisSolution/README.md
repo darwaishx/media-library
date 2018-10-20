@@ -146,7 +146,7 @@ After the CloudFormation template is complete, you should receive a welcome emai
 }
 ```
 
-9. Go back to previous screen and Click on Code. You will see references different Lambda functions which call various Rekognition APIs to detect labels, faces, celebrities etc.
+9. Go back to previous screen and Click on Code. You will see references to Lambda functions which call various Rekognition APIs to detect labels, faces, celebrities etc.
 
 ![](assets/mas-image-workflow-code.png)
 
@@ -159,18 +159,21 @@ After the CloudFormation template is complete, you should receive a welcome emai
              "End": true
              }
 ```
+10. Media Analysis Solution has different modules to process incoming content including images, videos and audio files. In next module you will learn how to extend Media Analysis Solution and make changes to different components.
 
-8. [image.js](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/image/image.js) shows node code to process images.
+![](assets/mas-src.png)
 
-9. MAS stores extracted metadata for each media file in a JSON file in S3 bucket along with the media file. To view metadata JSON file, go to S3 and search media.
+11. [image.js](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/image/image.js) shows node code that Media Analysis Solution use to process images.
+
+12. Media Analysis Solution stores extracted metadata for each media file in a JSON file in S3 bucket along with the media file. To view metadata JSON file, go to S3 and search media.
 
 ![](assets/mas-s3-content.png)
 
-10. Click on the S3 bucket that starts with media-analysis and go to private -> folder with guid in it -> media
+13. Click on the S3 bucket that starts with media-analysis and go to private -> folder with guid in it -> media
 
 ![](assets/mas-s3-objects.png)
 
-11. You will see folder with guid as their names for each object uploaded to MAS. Click on a folder and go inside nested folder results. You will see JSON files containing metadata for different Rekognition API  calls.
+14. You will see folder with guid as their names for each object uploaded to MAS. Click on a folder and go inside nested folder results. You will see JSON files containing metadata for different Rekognition API  calls.
 
 ![](assets/mas-s3-objectresults.png)
 
