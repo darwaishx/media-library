@@ -29,10 +29,9 @@ EU (Ireland) | [![Launch Media Analysis Solution in eu-west-1](http://docs.aws.a
 
 3. Enter a **valid email address**. You will receive log-in information and notifications at this email address after the CloudFormation template is complete. Leave the Elasticsearch cluster size to be **Small** and click **Next**.
 
-  ```
-  NOTE: Make sure you enter a valid email address. You will receive credentials and URL to login to the web app for Media Analysis Solution at this email address.
-  ```
-    ![Specify Details Screenshot](assets/cfn-specify-details.png)
+  **NOTE: Make sure you enter a valid email address. You will receive credentials and URL to login to the web app for Media Analysis Solution at this email address.**
+
+![Specify Details Screenshot](assets/cfn-specify-details.png)
 
 4. On the Options page, leave all the defaults and click **Next**.
 
