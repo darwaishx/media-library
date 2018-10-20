@@ -36,9 +36,10 @@ This workshop is broken up into following modules:
 1. [Setup Media Analysis Solution](1-MediaAnalysisSolution)
 3. [Extend Media Analysis Solution for Content Moderation](2-ContentModeration)
 
-## Cleanup
+## Clean up
 
-After you have completed the workshop, you can delete all of the resources using the following steps:
+1. Go to the CloudFormation console https://console.aws.amazon.com/cloudformation/home
 
-1. Delete all Lambda functions created manually
-2. Delete all Cloudformation stacks created in the first module
+2. Select stack with Stack Name - `Media Analysis`, click Actions and click on Delete Stack. This will also delete all the nested stacks.
+
+  ![CloudFormation Stack Delete](./2-ContentModeration/assets/mas-cf-delete.png)
