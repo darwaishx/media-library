@@ -89,7 +89,7 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 
 ![Step Functions JSON](assets/sf-03.png)
 
-5. Use an editor of your choice to replace "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION" with the arn of lambda function of your instance of Media Analysis Solution that you noted in step 1.
+5. Use an editor of your choice to replace all instances of "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION" with the arn of lambda function of your instance of Media Analysis Solution that you noted in step 1.
 
 ![Step Functions Edit](assets/sf-04.png)
 
