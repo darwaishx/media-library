@@ -68,9 +68,13 @@ After the CloudFormation template is complete, you should receive a welcome emai
 
 1. Download and save [sample image](sample-images/picnic.jpg) on your desktop.
 
-2. In MAS, click on the **Upload** link from the top menu.
+2. In Media Analysis Solution, click on the **Upload** link from the top menu.
+
+![Upload](assets/mas-upload.png)
 
 3. Under **Analyze new Media**, click on Choose File, select the image you downloaded in earlier step and click "Upload Media".
+
+![Upload](assets/mas-upload-image.png)
 
 4. You should get a dialog as below showing progress of image analysis using different Rekognition APIs.
 
