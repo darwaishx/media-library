@@ -140,8 +140,8 @@ You have successfully extended Media Analysis Solution to detect text and modera
 
 ## Clean up
 
-3. Go to the CloudFormation console https://console.aws.amazon.com/cloudformation/home
+1. Go to the CloudFormation console https://console.aws.amazon.com/cloudformation/home
 
-4. Select stack with Stack Name - `Media Analysis`, click Actions and click on Delete Stack.
+2. Select stack with Stack Name - `Media Analysis`, click Actions and click on Delete Stack. This will also delete all the nested stacks.
 
   ![CloudFormation Stack Delete](assets/mas-cf-delete.png)
