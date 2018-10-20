@@ -1,16 +1,16 @@
 # Content Moderation
 
-In this module you will extend the Media Analysis Solution to extract text from the images and then moderate images with explicit or suggestive content and offensive language. After you complete this module, your solution will automatically detect and isolate un-safe content as it is uploaded.
+In this module you will extend the Media Analysis Solution to identify un-safe images including explicit or suggestive content or offensive text in the images. After you complete this module, your solution will automatically detect and isolate un-safe content as it is uploaded.
 
 We will be using [DetectModerationLabels](https://docs.aws.amazon.com/rekognition/latest/dg/API_DetectModerationLabels.html) and [DetectText](https://docs.aws.amazon.com/rekognition/latest/dg/API_DetectText.html) APIs of Amazon Rekognition to perform content moderation.
 
 To enhance the solution, you will modify three components of the solution:
 
-  1. Media Analysis Lambda Function - Add code to detect text, moderation labels and then analyze the extracted meta-data for un-safe content.
+  1. **Media Analysis Lambda Function**: Add code to detect text, moderation labels and then analyze the extracted meta-data for un-safe content.
 
-  2. IAM Role for Media Analysis Lambda Function - Give IAM role the permissions to call the DetectModerationLabels and DetectText API.
+  2. **IAM Role for Media Analysis Lambda Function**: Give IAM role the permissions to call the DetectModerationLabels and DetectText API.
 
-  3. Media Analysis Step Functions - Modify the step functions to change the workflow to detect, isolate un-safe images as they are uploaded.
+  3. **Media Analysis Step Functions**: Modify the step functions to change the workflow to detect, isolate un-safe images as they are uploaded.
 
 ## Step 1 - Modify Media Analysis Lambda Function
 
