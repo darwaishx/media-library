@@ -46,7 +46,7 @@ In this step, you will modify the Media Analysis Solution lambda function to ext
      - Key: moderate_text_keywords
      - Value: sand, beach
 
-![Lambda](assets/lambda-07.png)
+![Lambda](assets/lambda-08.png)
 
   **You have successfully completed step 1 and updated lambda function to perform additional analysis.!**
 
