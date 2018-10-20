@@ -137,3 +137,11 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 ## Completion
 
 You have successfully extended Media Analysis Solution to detect text and moderate un-safe content for images. You can use the same technique to update the workflow and lambda function to enable content moderation for videos.
+
+## Clean up
+
+3. Go to the CloudFormation console https://console.aws.amazon.com/cloudformation/home
+
+4. Select stack with Stack Name - `Media Analysis`, click Actions and click on Delete Stack.
+
+  ![CloudFormation Stack Delete](assets/mas-cf-delete.png)
