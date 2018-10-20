@@ -103,13 +103,13 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 
 ![Content Moderation Branch](assets/sf-07.png)
 
-  **You have successfully completed step 3 and updated state machine!**
+  **You have successfully completed step 3 and updated state machine.**
 
 ## Testing it out
 
-1. Save [sample image](sample_images/small_yoga_swimwear.jpg)  on your local machine.
+1. Download [sample image](sample-images/small_yoga_swimwear.jpg) on your local machine.
 
-2. Upload the image you just saved to the Media Analysis web portal.
+2. Go to the Media Analysis Portal, and upload the image you just saved.
 
 3. Click on View progress to see the updated workflow. Notice image did not get indexed as the solution found un-safe content.
 
