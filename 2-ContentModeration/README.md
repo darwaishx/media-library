@@ -32,8 +32,10 @@ In this step, you will modify the Media Analysis Lambda Function to make calls t
 6. Click Save to upload the new lambda code.
 
 7. Under Environment Variables create two environment variables as below:
-  - Key: moderate_label_keywords    Value: ocean,sun
-  - Key: moderate_text_keywords     Value: sun,filter
+  - Key: moderate_label_keywords
+  - Value: ocean, sun
+  - Key: moderate_text_keywords
+  - Value: sand, beach
 
 8. Click on Save to save the environment variables.
 
@@ -107,13 +109,21 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 
 ## Testing it out
 
-1. Download [sample image](sample-images/small_yoga_swimwear.jpg) on your local machine.
+1. Download [sample image](assets/yoga-swimwear.jpg) on your local machine.
 
 2. Go to the Media Analysis Portal, and upload the image you just saved.
 
-3. Click on View progress to see the updated workflow. Notice image did not get indexed as the solution found un-safe content.
+3. Click on View progress in your AWS Console. You can see in the visual workflow, image did not get indexed as the solution found it to be un-safe content.
 
-4. Go to s3 and you will contentModerationWarning.json with details from content moderation engine.
+![unsafe content](assets/test-01.png)
+
+4. Go to S3 bucket where content for your Media Analysis Solutions is uploaded. Locate the folder for the image you just uploaded and you will find contentModerationWarning.json.
+
+![unsafe content](assets/test-02.png)
+
+5. Download and open the JSON file contentModerationWarning.json and you should the message from content moderation engine about the nature of un-safe content.
+
+![unsafe content message](assets/test-03.png)
 
 ## Completion
 
