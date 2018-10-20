@@ -43,7 +43,7 @@ In this step, you will modify the Media Analysis Lambda Function to make calls t
 
 In this step you will provide the Media Analysis Lambda Function necessary permissions to call the Rekognition DetectModerationLabels and DetectText APIs.
 
-1. Open the [Cloud formation console]( https://console.aws.amazon.com/cloudformation/home)
+1. Go to the CloudFormation console https://console.aws.amazon.com/cloudformation/home
 
 2. Click on the stack with Stack Name - `Media Analysis`, select **Resources** tab from the bottom pane and navigate to Media Analysis Function Role. Click on the hyperlink to open the IAM Role
 
