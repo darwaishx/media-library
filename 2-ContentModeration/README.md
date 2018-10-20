@@ -24,15 +24,9 @@ In this step, you will modify the Media Analysis Solution lambda function to ext
 
 ![Lambda](assets/lambda-01.png)
 
-![Lambda](assets/lambda-02.png)
-
 ![Lambda](assets/lambda-03.png)
 
-![Lambda](assets/lambda-04.png)
-
 ![Lambda](assets/lambda-05.png)
-
-![Lambda](assets/lambda-06.png)
 
 3. Go to the CloudFormation console https://console.aws.amazon.com/cloudformation/home
 
