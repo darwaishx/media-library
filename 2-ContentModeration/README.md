@@ -69,25 +69,41 @@ In this step you will provide the Media Analysis Lambda Function necessary permi
 
 ![Visual Editor](assets/iam-06.png)
 
+**You have successfully completed step 2 and updated IAM role to allows Lambda function to call additional Rekognition APIs.**
+
 ## Step 3 - Modify Media Analysis Step Function
 
 In this step, you will modify the Media Analysis Step Function to orchestrate the Lambda function calls.
 
 1. Go to AWS Step function console at https://console.aws.amazon.com/states/home
 
-2. In the left navigation click on State Machines
+2. In the left navigation click on State Machines and type **media** in the search box. You see state machine for your instance of Media Analysis Solution. Click on the state machine.
 
-3. Type **media** in the search box and you should see state machine for your instance of Media Analysis Solution.
+![Step Functions](assets/sf-01.png)
 
-4. Click on the state machine and on the next screen click Edit.
+3. Click Edit to update the state machine.
 
-5. [Download and save](./code/step-function.json) on your local machine.
+![Step Functions Edit](assets/sf-02.png)
 
-6. Use an editor and replace all to update "Resource" attributes in the JSON file you just downloaded.
+4. Under State machine definition, copy the JSON of your state machine.
 
-7. Copy and paste the JSON into the text box under State machine definition and click Save.
+![Step Functions JSON](assets/sf-03.png)
 
-  **You have successfully completed step 3!**
+5. Use an editor of your choice to replace "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION" with the arn of lambda function of your instance of Media Analysis Solution that you noted in step 1.
+
+![Step Functions Edit](assets/sf-04.png)
+
+6. Replace JSON of you state machine definition with the updated JSON from your code editor and click Save.
+
+![Step Functions Edit](assets/sf-05.png)
+
+7. In the right pane, you will see updated visual workflow showing update state machine.
+
+![New Branches](assets/sf-06.png)
+
+![Content Moderation Branch](assets/sf-07.png)
+
+  **You have successfully completed step 3 and updated state machine!**
 
 ## Testing it out
 
