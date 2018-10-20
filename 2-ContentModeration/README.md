@@ -43,40 +43,31 @@ In this step, you will modify the Media Analysis Lambda Function to make calls t
 
 In this step you will provide the Media Analysis Lambda Function necessary permissions to call the Rekognition DetectModerationLabels and DetectText APIs.
 
-  a. Open the [Cloud formation console]( https://console.aws.amazon.com/cloudformation/home)
+1. Open the [Cloud formation console]( https://console.aws.amazon.com/cloudformation/home)
 
-  b. Click on the stack with Stack Name - `Media Analysis`, select **Resources** tab from the bottom pane and navigate to Media Analysis Function Role. Click on the hyperlink to open the IAM Role
+2. Click on the stack with Stack Name - `Media Analysis`, select **Resources** tab from the bottom pane and navigate to Media Analysis Function Role. Click on the hyperlink to open the IAM Role
 
-  ![CloudFormation Stack output screenshot](images/6-CFN-Media-Analysis-Function-Role.png)
+  ![CloudFormation Stack output screenshot](assets/iam-01.png)
 
-  c. In the IAM management console, click on Add inline policy
+3. On summary screen, under Permissions tab, click on the arrow to view details of the policy "media-analysis-function-policy".
 
-  ![Add Inline Policy](images/7-IAM-Add-Inline-Policy.png)
+  ![Policy](assets/iam-02.png)
 
-  d. In the *Create Policy* screen, click on JSON and paste the below policy and click on
-  **Review Policy** (Screen shot below for reference)
+4. Click on Edit Policy
 
- ``` json
-  {
-    "Version": "2012-10-17",
-    "Statement": [
-      {
-        "Effect": "Allow",
-        "Action": [
-          "rekognition:DetectModerationLabels",
-          "rekognition:DetectText"
-        ],
-        "Resource": "*"
-      }
-    ]
-  }
- ```
+![Edit Policy](assets/iam-03.png)
 
-  ![Add Policy](images/8-Add-Policy.png)
+5. Expand Rekognition, and hover over Actions to get the edit icon and then click on it.
 
-  e. On the review policy screen, give it a meaningful name and click on Create Policy
+![Visual Editor](assets/iam-04.png)
 
-  ![Create Policy](images/9-Create-Policy.png)
+6. Select DetectModerationLabels and DetectText and click Review Policy button.
+
+![Visual Editor](assets/iam-05.png)
+
+7. Under Review policy, click Save changes.
+
+![Visual Editor](assets/iam-06.png)
 
 **You have successfully completed step 2!**
 
