@@ -77,7 +77,7 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 
 1. Go to AWS Step function console at https://console.aws.amazon.com/states/home
 
-2. In the left navigation click on State Machines and type **media** in the search box. You see state machine for your instance of Media Analysis Solution. Click on the state machine.
+2. In the left navigation click on State Machines and type **media** in the search box. You will see state machine for your instance of Media Analysis Solution. Click on the state machine.
 
 ![Step Functions](assets/sf-01.png)
 
