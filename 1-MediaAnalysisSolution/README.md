@@ -52,9 +52,7 @@ EU (Ireland) | [![Launch Media Analysis Solution in eu-west-1](http://docs.aws.a
 
 After the CloudFormation template is complete, you should receive a welcome email at the email address you provided, with the subject line `Your Media Analysis Solution demo login`. In this section, you will use the link and Username/Password provided in the email to access the Media Analysis Solution user interface.
 
-  ```
-  If you did not receive email about your Media Analysis Solution instance, check spam/junk folder in your email.
-  ```
+  **If you did not receive email about your Media Analysis Solution instance, check spam/junk folder in your email.**
 
 ![Email](assets/mas-email.png)
 
