@@ -74,7 +74,7 @@ After the CloudFormation template is complete, you should receive a welcome emai
 
 3. Under **Analyze new Media**, click on Choose File, select the image you downloaded in earlier step and click "Upload Media".
 
-![Upload](assets/mas-upload.png)
+![Upload](assets/mas-upload-image.png)
 
 4. You should get a dialog as below showing progress of image analysis using different Rekognition APIs.
 
