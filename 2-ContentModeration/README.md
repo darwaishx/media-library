@@ -48,6 +48,10 @@ In this step, you will modify the Media Analysis Solution lambda function to ext
 
 ![Lambda](assets/lambda-08.png)
 
+7. Make note of the arn of lambda function. You will need this in the step below as you modify state machine.
+
+![Lambda](assets/lambda-09.png)
+
   **You have successfully completed step 1 and updated lambda function to perform additional analysis.!**
 
 ## Add permissions to IAM Role
