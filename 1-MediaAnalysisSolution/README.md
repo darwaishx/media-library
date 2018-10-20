@@ -57,7 +57,7 @@ After the CloudFormation template is complete, you should receive a welcome emai
   If you did not receive email about your Media Analysis Solution instance, check spam/junk folder in your email.
   ```
 
-![Email](images/mas-email.png)
+![Email](assets/mas-email.png)
 
 1. Click on the link in the email, and use Username and Password in the email to sign in to the application.
 
@@ -176,7 +176,7 @@ In addition to analyzing media, MAS enables you to upload faces to an Amazon Rek
 
 2. Under **Add to Collection**, upload the image you just downloaded by selecting "Choose File" (or Browse for those on a Mac).
 
-![](images/mas-add-to-collection.png)
+![](assets/mas-add-to-collection.png)
 
 3. Next, name the image “mattwood” and choose Upload Face.
 
