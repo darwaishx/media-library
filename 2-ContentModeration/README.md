@@ -61,15 +61,13 @@ In this step you will provide the Media Analysis Lambda Function necessary permi
 
 ![Visual Editor](assets/iam-04.png)
 
-6. Select DetectModerationLabels and DetectText and click Review Policy button.
+6. Select DetectModerationLabels and DetectText and click on the button Review policy.
 
 ![Visual Editor](assets/iam-05.png)
 
 7. Under Review policy, click Save changes.
 
 ![Visual Editor](assets/iam-06.png)
-
-**You have successfully completed step 2!**
 
 ## Step 3 - Modify Media Analysis Step Function
 
