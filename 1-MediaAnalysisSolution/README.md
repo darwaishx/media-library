@@ -42,11 +42,11 @@ EU (Ireland) | [![Launch Media Analysis Solution in eu-west-1](http://docs.aws.a
 
 7. MediaAnalysis CloudFormation template will create 3 additional nested stacks - `MediaAnalysisStateMachineStack`, `MediaAnalysisApiStack`, and `MediaAnalysisStorageStack`. Wait until the status of all four stack reach to `CREATE_COMPLETE`. You can click refresh icon at the top right to get current status of CloudFormation stacks.
 
-**Note: It can take up to 20 minutes for CloudFormation to complete.**
+**Note: It can take up to 15 minutes for CloudFormation template to complete.**
 
 8. Select the Stack - `Media Analysis`, and click on the **Resources** tab from the bottom pane. You will see various AWS resources including S3 buckets, IAM roles, Lambda functions etc. that CloudFormation created.
 
-![CloudFormation Stack output screenshot](assets/cfn-stack-resources.png)
+![CloudFormation Stack output screenshot](assets/mas-cf-resources.png)
 
 ## Access Media Analysis Solution
 
