@@ -114,7 +114,7 @@ After the CloudFormation template is complete, you should receive a welcome emai
 
 ![](assets/mas-image-workflow.png)
 
-7. Visual workflow shows how appropriate workflow steps are executed depending on the type of the media (Image, Audio or Video). Different stages in the workflow call different Lambda functions to perform tasks for that stage.[MAS Code](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/index.js) shows how depending on the input media type step function is triggered.
+8. Visual workflow shows how appropriate workflow steps are executed depending on the type of the media (Image, Audio or Video). Different stages in the workflow call different Lambda functions to perform tasks for that stage. [Media Analysis Solution Code](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/index.js) shows how depending on the input media type step function is triggered.
 
 ```node
 
@@ -146,7 +146,7 @@ After the CloudFormation template is complete, you should receive a welcome emai
 }
 ```
 
-8. Go back to previous screen and Click on Code. You will see references different Lambda functions which call various Rekognition APIs to detect labels, faces, celebrities etc.
+9. Go back to previous screen and Click on Code. You will see references different Lambda functions which call various Rekognition APIs to detect labels, faces, celebrities etc.
 
 ![](assets/mas-image-workflow-code.png)
 
