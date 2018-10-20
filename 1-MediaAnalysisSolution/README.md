@@ -206,37 +206,23 @@ In addition to analyzing media, MAS enables you to upload faces to an Amazon Rek
 
 5. Click on **View Progress in your AWS Console** to go to StepFunction in AWS Console.
 
-6. Under Visual workflow, click on expand button to get maximized view of the workflow.
+6. Under Visual workflow, click on expand button to get maximized view of the workflow. You should different stages turn green as workflow progresses.
 
 ![](assets/mas-video-workflow.png)
 
-7. You should different stages turn green as workflow progresses.
-
-8. Choose Browse on the Media Analysis Solution page and click "View Results" for the video you just uploaded.
+7. Choose Browse on the Media Analysis Solution page and click "View Results" for the video you just uploaded.
 
 ![](assets/mas-browse.png)
 
-9. You will see extracted metadata includes labels, facial attributes, known faces, and celebrities from Amazon Rekognition; a transcript from Amazon Transcribe; and entities and phrases from Amazon Comprehend. Choose Known Faces and you’ll see that Matt Wood has been recognized since we added him to the Amazon Rekognition collection before we analyzed this video. This feature can be extremely useful for common media use cases that require identification of multiple individuals.
+8. You will see extracted metadata includes labels, facial attributes, known faces, and celebrities from Amazon Rekognition; a transcript from Amazon Transcribe; and entities and phrases from Amazon Comprehend. Choose Known Faces and you’ll see that Matt Wood has been recognized since we added him to the Amazon Rekognition collection before we analyzed this video. This feature can be extremely useful for common media use cases that require identification of multiple individuals.
 
 ![](assets/mas-video-known-faces.png)
 
-10. Choose Entities and see that Amazon Comprehend has identified artists from Matt’s presentation, such as Rick Astley and Eric Clapton.
+9. Choose Entities and see that Amazon Comprehend has identified artists from Matt’s presentation, such as Rick Astley and Eric Clapton.
 
 ![](assets/mas-video-entities.png)
 
 11. [video.js](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/video/video.js) shows how Media Analysis Solution calls different Rekognition APIs to start videos analysis. [results.js](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/video/results.js) contains the core logic to then get the metadata from Rekognition after the analysis job is complete.
-
-12. MAS stores extracted metadata for each media file in a JSON file in S3 bucket along with the media file. To view metadata JSON file, go to S3 and search media.
-
-![](assets/mas-s3-content.png)
-
-13. Click on the S3 bucket that starts with media-analysis and go to private -> folder with guid in it -> media
-
-![](assets/mas-s3-objects.png)
-
-14. You will see folder with guid as their names for each object uploaded to MAS. Click on a folder and go inside nested folder results. You will see JSON files containing metadata for different Rekognition API  calls.
-
-![](assets/mas-s3-objectresults.png)
 
 ## Completion
 You have successfully deployed Media Analysis Solution, and analyzed media files. In the next module, [Content Moderation](../2-ContentModeration), you will learn how to extend Media Solution to detect and filter inappropriate content.
