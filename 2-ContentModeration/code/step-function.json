@@ -49,7 +49,7 @@
                     },
                     "Image-Get Labels": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.results.labels",
                       "End": true
@@ -70,7 +70,7 @@
                     },
                       "Image-Get Moderation-Labels": {
                         "Type": "Task",
-                        "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                        "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                         "InputPath": "$",
                         "ResultPath": "$.results.moderation_labels",
                         "End": true
@@ -91,7 +91,7 @@
                     },
                     "Image-Get Celebs": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.results.celebs",
                       "End": true
@@ -112,7 +112,7 @@
                     },
                     "Image-Get Faces": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.results.faces",
                       "Next": "Image-Face-Match Params"
@@ -128,7 +128,7 @@
                     },
                     "Image-Get Face-Matches": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.results.face_matches",
                       "End": true
@@ -149,7 +149,7 @@
                     },
                       "Image-Get Detect-Text": {
                         "Type": "Task",
-                        "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                        "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                         "InputPath": "$",
                         "ResultPath": "$.results.detect_text",
                         "End": true
@@ -207,7 +207,7 @@
             },
             "Start MediaConvert": {
               "Type": "Task",
-              "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+              "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
               "InputPath": "$",
               "ResultPath": "$.mediaConvert",
               "Next": "Did MediaConvert Start"
@@ -237,7 +237,7 @@
             },
             "Get MediaConvert Status": {
               "Type": "Task",
-              "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+              "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
               "InputPath": "$",
               "ResultPath": "$",
               "Next": "Did MediaConvert Complete"
@@ -269,7 +269,7 @@
             },
             "Start Transcription": {
               "Type": "Task",
-              "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+              "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
               "InputPath": "$",
               "ResultPath": "$.transcribe",
               "Next": "Did Transcription Start"
@@ -300,7 +300,7 @@
             },
             "Get Transcription Status": {
               "Type": "Task",
-              "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+              "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
               "Next": "Did Transcription Complete",
               "InputPath": "$",
               "ResultPath": "$.transcribe.status"
@@ -336,7 +336,7 @@
             },
             "Get Results": {
               "Type": "Task",
-              "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+              "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
               "Next": "Get Comprehension",
               "InputPath": "$",
               "ResultPath": "$.results.transcript"
@@ -362,7 +362,7 @@
                     },
                     "Get Entities": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.results.entities",
                       "End": true
@@ -383,7 +383,7 @@
                     },
                     "Get Phrases": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.results.phrases",
                       "End": true
@@ -433,7 +433,7 @@
                     },
                     "Video-Start Labels": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.video",
                       "Next": "Labels Wait"
@@ -454,7 +454,7 @@
                     },
                     "Labels Get Status": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "Next": "Labels Complete",
                       "InputPath": "$",
                       "ResultPath": "$.video.status"
@@ -485,7 +485,7 @@
                     },
                     "Get Label Results": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.results.labels",
                       "Next": "Label Results Complete"
@@ -528,7 +528,7 @@
                     },
                     "Video-Start Celebs": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.video",
                       "Next": "Celebs Wait"
@@ -549,7 +549,7 @@
                     },
                     "Celeb Get Status": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "Next": "Celebs Complete",
                       "InputPath": "$",
                       "ResultPath": "$.video.status"
@@ -580,7 +580,7 @@
                     },
                     "Get Celeb Results": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.results.celebs",
                       "Next": "Celeb Results Complete"
@@ -623,7 +623,7 @@
                     },
                     "Video-Start Faces": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.video",
                       "Next": "Faces Wait"
@@ -644,7 +644,7 @@
                     },
                     "Face Get Status": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "Next": "Faces Complete",
                       "InputPath": "$",
                       "ResultPath": "$.video.status"
@@ -675,7 +675,7 @@
                     },
                     "Get Face Results": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.results.faces",
                       "Next": "Face Results Complete"
@@ -718,7 +718,7 @@
                     },
                     "Video-Start Face-Match": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.video",
                       "Next": "Face-Match Wait"
@@ -739,7 +739,7 @@
                     },
                     "Face-Match Get Status": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "Next": "Face-Match Complete",
                       "InputPath": "$",
                       "ResultPath": "$.video.status"
@@ -795,7 +795,7 @@
                     },
                     "Get Face-Match Results": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.results.face_matches",
                       "Next": "Face-Match Results Complete"
@@ -831,7 +831,7 @@
                     },
                     "Video-Start Persons": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.video",
                       "Next": "Persons Wait"
@@ -852,7 +852,7 @@
                     },
                     "Persons Get Status": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "Next": "Persons Complete",
                       "InputPath": "$",
                       "ResultPath": "$.video.status"
@@ -883,7 +883,7 @@
                     },
                     "Get Persons Results": {
                       "Type": "Task",
-                      "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+                      "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
                       "InputPath": "$",
                       "ResultPath": "$.results.persons",
                       "Next": "Persons Results Complete"
@@ -982,7 +982,7 @@
               "Type": "Task",
               "InputPath": "$",
               "ResultPath": "$.contentModeration",
-              "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+              "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
               "Next": "Is Content Safe"
             },
             "Is Content Safe": {
@@ -1011,7 +1011,7 @@
             "Index Metadata": {
               "Type": "Task",
               "InputPath": "$",
-              "Resource": "arn:aws:lambda:us-east-1:645849832089:function:MediaAnalysis-MediaAnalysisFunction-SRGAN52YYGOX",
+              "Resource": "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION",
               "End": true
             },
             "Not Valid Format": {
