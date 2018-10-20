@@ -12,7 +12,7 @@ To enhance the solution, you will modify three components of the solution:
 
   3. **Media Analysis Step Functions**: Modify the step functions to change the workflow to detect, isolate un-safe images as they are uploaded.
 
-## Step 1 - Modify Media Analysis Lambda Function
+## Modify Media Analysis Lambda Function
 
 In this step, you will modify the Media Analysis Solution lambda function to extract text from images and then use detected labels, text and moderation labels to identify un-safe content.
 
@@ -50,7 +50,7 @@ In this step, you will modify the Media Analysis Solution lambda function to ext
 
   **You have successfully completed step 1 and updated lambda function to perform additional analysis.!**
 
-## Step 2 - Add permissions to IAM Role
+## Add permissions to IAM Role
 
 In this step you will provide the Media Analysis Lambda Function necessary permissions to call the Rekognition DetectModerationLabels and DetectText APIs.
 
@@ -82,7 +82,7 @@ In this step you will provide the Media Analysis Lambda Function necessary permi
 
 **You have successfully completed step 2 and updated IAM role to allows Lambda function to call additional Rekognition APIs.**
 
-## Step 3 - Modify Media Analysis Step Function
+## Modify Media Analysis Step Function
 
 In this step, you will modify the Media Analysis Step Function to orchestrate the Lambda function calls.
 
