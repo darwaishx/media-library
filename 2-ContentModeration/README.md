@@ -108,10 +108,6 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 
 6. Under State machine definition, replace JSON of you state machine definition with the updated JSON from your code editor and click Save.
 
-![Step Functions JSON](assets/sf-03.png)
-
-7. Replace JSON of you state machine definition with the updated JSON from your code editor and click Save.
-
 ![Step Functions Edit](assets/sf-05.png)
 
 8. In the right pane, you will see updated visual workflow showing updated state machine.
