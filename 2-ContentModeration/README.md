@@ -90,29 +90,31 @@ In this step you will provide the Media Analysis Lambda Function necessary permi
 
 In this step, you will modify the Media Analysis Step Function to orchestrate the Lambda function calls.
 
-1. Go to AWS Step function console at https://console.aws.amazon.com/states/home
+1. Download [state machine JSON](code/step-function.json) on your local machine.
 
-2. In the left navigation click on State Machines and type **media** in the search box. You will see state machine for your instance of Media Analysis Solution. Click on the state machine.
-
-![Step Functions](assets/sf-01.png)
-
-3. On the state machine details screen, click Edit to update the state machine.
-
-![Step Functions Edit](assets/sf-02.png)
-
-4. Under State machine definition, copy the JSON of your state machine.
-
-![Step Functions JSON](assets/sf-03.png)
-
-5. Use an editor of your choice to replace all instances of "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION" with the arn of lambda function of your instance of Media Analysis Solution that you noted in step 1.
+2. Use an editor of your choice to replace all instances of "REPLACE-WITH-ARN-OF-YOUR-LAMBDA-FUNCTION" with the arn of lambda function of your instance of Media Analysis Solution that you noted in step 1.
 
 ![Step Functions Edit](assets/sf-04.png)
 
-6. Replace JSON of you state machine definition with the updated JSON from your code editor and click Save.
+3. Go to AWS Step function console at https://console.aws.amazon.com/states/home
+
+4. In the left navigation click on State Machines and type **media** in the search box. You will see state machine for your instance of Media Analysis Solution. Click on the state machine.
+
+![Step Functions](assets/sf-01.png)
+
+5. On the state machine details screen, click Edit to update the state machine.
+
+![Step Functions Edit](assets/sf-02.png)
+
+6. Under State machine definition, replace JSON of you state machine definition with the updated JSON from your code editor and click Save.
+
+![Step Functions JSON](assets/sf-03.png)
+
+7. Replace JSON of you state machine definition with the updated JSON from your code editor and click Save.
 
 ![Step Functions Edit](assets/sf-05.png)
 
-7. In the right pane, you will see updated visual workflow showing updated state machine.
+8. In the right pane, you will see updated visual workflow showing updated state machine.
 
 ![New Branches](assets/sf-06.png)
 
