@@ -110,7 +110,7 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 
 ![Step Functions Edit](assets/sf-05.png)
 
-8. In the right pane, you will see updated visual workflow showing updated state machine.
+7. In the right pane, you will see updated visual workflow showing updated state machine.
 
 ![New Branches](assets/sf-06.png)
 
