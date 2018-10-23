@@ -147,3 +147,7 @@ You have successfully extended Media Analysis Solution to detect text and modera
 2. Select stack with Stack Name - `Media Analysis`, click Actions and click on Delete Stack. This will also delete all the nested stacks.
 
   ![CloudFormation Stack Delete](assets/mas-cf-delete.png)
+
+3. Delete S3 buckets created by Media Analysis Solution.
+
+![CloudFormation Stack Delete](assets/mas-s3-delete.png)
