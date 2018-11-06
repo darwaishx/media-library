@@ -176,7 +176,7 @@ After the CloudFormation template is complete, you should receive a welcome emai
 
 ![](assets/mas-facial-attributes.png)
 
-## Review extracted raw metadata stored on S3
+## Review Extracted Metadata Stored In S3
 
 1. Media Analysis Solution indexes extracted metadata in Elasticsearch but also stores raw JSON in S3 bucket along with the media file. To view metadata JSON files, go to S3 and search media.
 
