@@ -160,7 +160,7 @@ After the CloudFormation template is complete, you should receive a welcome emai
              }
 ```
 
-10. Media Analysis Solution has different modules to process incoming content including images, videos and audio files. In next module you will learn how to extend Media Analysis Solution and make changes to different components.
+10. Media Analysis Solution's [analysis api](https://github.com/awslabs/media-analysis-solution/tree/master/source/analysis/lib) has different modules to process incoming content including images, videos and audio files. In next module you will learn how to extend Media Analysis Solution and make changes to different components.
 
 ![](assets/mas-src.png)
 
@@ -233,7 +233,7 @@ In addition to analyzing media, MAS enables you to upload faces to an Amazon Rek
 
 ![](assets/mas-video-transcript.png)
 
-11. [video.js](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/video/video.js) shows how Media Analysis Solution calls different Rekognition APIs to start videos analysis. [results.js](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/video/results.js) contains the core logic to then get the metadata from Rekognition after the analysis job is complete.
+10. [video.js](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/video/video.js) shows how Media Analysis Solution calls different Rekognition APIs to start videos analysis. [results.js](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/video/results.js) contains the core logic to then get the metadata from Rekognition after the analysis job is complete.
 
 ## Completion
 You have successfully deployed Media Analysis Solution, and analyzed media files. In the next module, [Content Moderation](../2-ContentModeration), you will learn how to extend Media Solution to detect and filter inappropriate content.
