@@ -21,7 +21,7 @@ In this step, you will modify the Media Analysis Solution lambda function to ext
 
 1. [Download](./code/lambda.zip) lambda package on your local machine. This lambda function has been updated to include logic for content moderation.
 
-2. We have updated index.js and image.js as well as added content moderation module.
+2. Unzip the file and review updated code as we have modified index.js and image.js as well as added content moderation module.
 
 ![Lambda](assets/lambda-00.png)
 
@@ -37,7 +37,7 @@ In this step, you will modify the Media Analysis Solution lambda function to ext
 
   ![CloudFormation Stack Lambda](assets/lambda-cf-01.png)
 
-5. Under Function code, click on Upload button, select the zip file you downloaded in earlier step and click Save. It can take a minute to upload the zip file.
+5. Under Function code, click on Upload button, select the zip file (lambda.zip) you downloaded in earlier step and click Save. It can take a minute to upload the zip file.
 
 ![Lambda](assets/lambda-07.png)
 
