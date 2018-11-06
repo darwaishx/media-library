@@ -56,7 +56,7 @@ After the CloudFormation template is complete, you should receive a welcome emai
 
 ![Email](assets/mas-email.png)
 
-1. Click on the link in the email, and use Username and Password in the email to sign in to the application.
+1. Click on the link in the email, and use Username (***Notice: your username is not the same as the email address you provided***) and Password in the email to sign in to the application.
 
 2. After you sign in, MAS will prompt you to choose a new password. Enter a new password to continue to MAS landing page.
 
@@ -66,7 +66,7 @@ After the CloudFormation template is complete, you should receive a welcome emai
 
 ## Analyze Images using Media Analysis Solution
 
-1. Download and save [sample image](sample-images/picnic.jpg) on your desktop.
+1. Download and save [sample image](sample-images/skateboard.jpg) on your desktop.
 
 2. In Media Analysis Solution, click on the **Upload** link from the top menu.
 
@@ -159,21 +159,32 @@ After the CloudFormation template is complete, you should receive a welcome emai
              "End": true
              }
 ```
+
 10. Media Analysis Solution has different modules to process incoming content including images, videos and audio files. In next module you will learn how to extend Media Analysis Solution and make changes to different components.
 
 ![](assets/mas-src.png)
 
 11. [image.js](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/image/image.js) shows node code that Media Analysis Solution use to process images.
 
-12. Media Analysis Solution stores extracted metadata for each media file in a JSON file in S3 bucket along with the media file. To view metadata JSON file, go to S3 and search media.
+12. In Media Analysis Solution website, click Browse and click on View Results for image (drive.jpg) you just uploaded.
+
+![](assets/mas-browse-image.png)
+
+13. Review identified labels and facial attributes.
+
+![](assets/mas-facial-attributes.png)
+
+## Review extracted raw metadata stored on S3
+
+1. Media Analysis Solution indexes extracted metadata in Elasticsearch but also stores raw JSON in S3 bucket along with the media file. To view metadata JSON file, go to S3 and search media.
 
 ![](assets/mas-s3-content.png)
 
-13. Click on the S3 bucket that starts with media-analysis and go to private -> folder with guid in it -> media. You will see folders with guid as their names for each object uploaded to MAS.
+2. Click on the S3 bucket that starts with media-analysis and go to private -> folder with guid in it -> media. You will see folders with guid as their names for each object uploaded to MAS.
 
 ![](assets/mas-s3-objects.png)
 
-14. Click on a folder and go inside nested folder results. You will see JSON files containing metadata returned by different Rekognition API  calls.
+3. Click on a folder and go inside nested folder results. You will see JSON files containing metadata returned by different Rekognition API  calls.
 
 ![](assets/mas-s3-objectresults.png)
 
@@ -188,7 +199,7 @@ In addition to analyzing media, MAS enables you to upload faces to an Amazon Rek
 
 ![](assets/mas-add-to-collection.png)
 
-3. Next, name the image “mattwood” and choose Upload Face.
+3. Next, name the image “mattwood” ( *** UI currently does not allows spaces in the name *** ) and choose Upload Face.
 
 ![](assets/mas-add-to-collection-name.png)
 
