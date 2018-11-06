@@ -2,7 +2,10 @@
 
 In this module you will extend the Media Analysis Solution to identify un-safe images including explicit or suggestive content or offensive text in the images. After you complete this module, your solution will automatically detect and isolate un-safe content as it is uploaded.
 
-We will be using [DetectModerationLabels](https://docs.aws.amazon.com/rekognition/latest/dg/API_DetectModerationLabels.html) and [DetectText](https://docs.aws.amazon.com/rekognition/latest/dg/API_DetectText.html) APIs of Amazon Rekognition to perform content moderation.
+We will use following Rekognition APIs to achieve comprehensive content moderation:  
+- [Labels](https://docs.aws.amazon.com/rekognition/latest/dg/API_DetectLabels.html): to identify objects of interest
+- [DetectModerationLabels](https://docs.aws.amazon.com/rekognition/latest/dg/API_DetectModerationLabels.html): to identify explicit and suggestive content
+- [DetectText](https://docs.aws.amazon.com/rekognition/latest/dg/API_DetectText.html): to identify profane text
 
 To enhance the solution, you will modify three components of the solution:
 
