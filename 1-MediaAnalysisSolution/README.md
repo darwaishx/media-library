@@ -164,13 +164,15 @@ After the CloudFormation template is complete, you should receive a welcome emai
 
 ![](assets/mas-src.png)
 
-11. [image.js](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/image/image.js) shows node code that Media Analysis Solution use to process images.
+11. [image.js](https://github.com/awslabs/media-analysis-solution/blob/master/source/analysis/lib/image/image.js) shows node code that Media Analysis Solution uses to process images.
 
-12. In Media Analysis Solution website, click Browse and click on View Results for image (drive.jpg) you just uploaded.
+## View Media and Metadata in Media Analysis Solution
+
+1. In Media Analysis Solution website, click Browse and click on View Results for image (drive.jpg) you just uploaded.
 
 ![](assets/mas-browse-image.png)
 
-13. Review identified labels and facial attributes.
+2. Review identified labels and facial attributes.
 
 ![](assets/mas-facial-attributes.png)
 
