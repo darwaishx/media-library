@@ -45,9 +45,9 @@ In this step, you will modify the Media Analysis Solution lambda function to ext
   - Update value of CONFIDENCE_SCORE to 50
   - Add two new environment variables:
      - Key: moderate_label_keywords
-     - Value: ocean, sun
+     - Value: bikini
      - Key: moderate_text_keywords
-     - Value: sand, beach
+     - Value: crap, darn, damm
 
 ![Lambda](assets/lambda-08.png)
 
