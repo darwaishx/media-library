@@ -168,7 +168,7 @@ After the CloudFormation template is complete, you should receive a welcome emai
 
 ## View Media and Metadata in Media Analysis Solution
 
-1. In Media Analysis Solution website, click Browse and click on View Results for image (drive.jpg) you just uploaded.
+1. In Media Analysis Solution website, click Browse and click on View Results for image (drive.jpg) you uploaded earlier.
 
 ![](assets/mas-browse-image.png)
 
@@ -178,7 +178,7 @@ After the CloudFormation template is complete, you should receive a welcome emai
 
 ## Review extracted raw metadata stored on S3
 
-1. Media Analysis Solution indexes extracted metadata in Elasticsearch but also stores raw JSON in S3 bucket along with the media file. To view metadata JSON file, go to S3 and search media.
+1. Media Analysis Solution indexes extracted metadata in Elasticsearch but also stores raw JSON in S3 bucket along with the media file. To view metadata JSON files, go to S3 and search media.
 
 ![](assets/mas-s3-content.png)
 
