@@ -131,7 +131,7 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 
 ![unsafe content](assets/test-01.png)
 
-4. Under Visual workflow, click on "Not Sage Content" node and expand Output under Step details to see additional details.
+4. Under Visual workflow, click on "Not Safe Content" node and expand Output under Step details to see additional details.
 
 ![unsafe content](assets/test-01-a.png)
 
@@ -142,11 +142,11 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 
 ![unsafe content](assets/test-01-b.png)
 
-4. Go to S3 bucket where content for your Media Analysis Solutions is uploaded. Locate the folder for the image you just uploaded and you will find contentModerationWarning.json.
+6. Note "object_id" in the output and go to S3 bucket where content for your Media Analysis Solutions is uploaded. Locate the folder for the image you just uploaded (using the object_id from Step Function) and you will find contentModerationWarning.json.
 
 ![unsafe content](assets/test-02.png)
 
-5. Download and open the JSON file contentModerationWarning.json and you should the message from content moderation engine about the nature of un-safe content.
+7. Download and open the JSON file contentModerationWarning.json and you should the message from content moderation engine about the nature of un-safe content.
 
 ![unsafe content message](assets/test-03.png)
 
