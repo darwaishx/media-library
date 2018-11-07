@@ -21,7 +21,7 @@ In this step, you will modify the Media Analysis Solution lambda function to ext
 
 1. [Download](./code/lambda.zip) lambda package on your local machine. This lambda function has been updated to include logic for content moderation.
 
-2. Unzip the file and review updated code as we have modified index.js and image.js as well as added content moderation module.
+2. We have modified index.js and image.js as well as added content moderation module as shown below. (You can optionally unzip the labmda.zip and review updated code but it is not required to complete the workshop.)
 
 ![Lambda](assets/lambda-00.png)
 
