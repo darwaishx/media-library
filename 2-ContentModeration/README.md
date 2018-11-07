@@ -150,6 +150,10 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 
 ![unsafe content message](assets/test-03.png)
 
+8. If you you use "View Results" button for the test image you just uploaded, you will see error message as the image was not indexed because of moderation rules.
+
+![unsafe content message](assets/test-04.png)
+
 ## Completion
 
 You have successfully extended Media Analysis Solution to detect text and moderate un-safe content for images. You can use the same technique to update the workflow and lambda function to enable content moderation for videos.
