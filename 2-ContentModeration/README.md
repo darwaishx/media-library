@@ -127,9 +127,20 @@ In this step, you will modify the Media Analysis Step Function to orchestrate th
 
 2. Go to the Media Analysis Portal, and upload the image you just saved.
 
-3. Click on View progress in your AWS Console. You can see in the visual workflow, image did not get indexed as the solution found it to be un-safe content.
+3. Click on View progress link to go to your AWS Console in another tab. You can see in the visual workflow, image did not get indexed as the solution found it to be un-safe content.
 
 ![unsafe content](assets/test-01.png)
+
+4. Under Visual workflow, click on "Not Sage Content" node and expand Output under Step details to see additional details.
+
+![unsafe content](assets/test-01-a.png)
+
+5. Scroll to the bottom of the output and you will see our custom moderation api identified 3 items of interest:
+- bikini (detected by Rekognition Labels API)
+- suggestive, female swimwear or underwear (detected by Rekognition Moderation API)
+- crap, darn (text extract by Rekognition DetectText API)
+
+![unsafe content](assets/test-01-b.png)
 
 4. Go to S3 bucket where content for your Media Analysis Solutions is uploaded. Locate the folder for the image you just uploaded and you will find contentModerationWarning.json.
 
