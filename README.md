@@ -34,7 +34,7 @@ In order to complete this workshop you'll need an AWS Account with access to cre
 This workshop is broken up into following modules:
 
 1. [Setup Media Analysis Solution](1-MediaAnalysisSolution)
-3. [Extend Media Analysis Solution for Content Moderation](2-ContentModeration)
+2. [Extend Media Analysis Solution for Content Moderation](2-ContentModeration)
 
 ## Clean up
 
